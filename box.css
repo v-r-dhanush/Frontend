@@ -1,0 +1,29 @@
+.parent{
+    position:relative;
+    border:5px solid black;
+    width:600px;
+    height:400px;
+    margin:auto;
+}
+.tr{
+    position:absolute;
+    right:0px;
+    top: 0px;
+}
+.c{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+.bl{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+        
+}
+.br{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
