@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button{
+            margin-top:20px;
+            text-align:center;
+        }
+        .parent{
+            display:flex;
+            align-items: center;
+            flex-direction:column;
+            padding:60px;
+        }
+        img{
+            height:150px;
+            width:285px;
+            border-radius:5px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 15px;
+            font-size: 13px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        #w2 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    </style>
+    <title>Task 3</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <img src="../Assingment/images/jeff.jpeg" alt="Jeff" id="w1" width="200px"><br>
+            <h3 id="w2">Jeff</h3>
+            <div class="button">
+                <button type="button" onclick="changejeff()">jeff</button>
+                <button type="button" onclick="changemusk()">musk</button>
+                <button type="button" onclick="changewarren()">warren</button>
+                <button type="button" onclick="changetata()">tata</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeimage(){
+            document.getElementById("w1").src="../Assingment/images/jeff.jpeg";
+            document.getElementById("w2").innerHTML = "Jeff"
+        }
+        function changemusk(){
+            document.getElementById("w1").src="../Assingment/images/musk.jpeg";
+            document.getElementById("w2").innerHTML = "Musk"
+        }
+        function changewarren(){
+            document.getElementById("w1").src="../Assingment/images/warren.jpeg";
+            document.getElementById("w2").innerHTML = "Warren"
+        }
+        function changetata(){
+            document.getElementById("w1").src="../Assingment/images/tata.jpeg";
+            document.getElementById("w2").innerHTML = "Tata"
+        }
+    </script>
+</body>
+</html>

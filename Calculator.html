@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=".//calculator.css">
+  <title>Calulator</title>
+</head>
+<body>
+  
+  <form class="box">
+    <h1 style="text-align:center">Calculator</h1>
+    <div class="number1">
+      <label for="num1">Enter First Number:</label>
+      <input type="text" id="num1" name="num1"><br>
+    </div>
+    <div class="number2">
+      <label for="num2">Enter Second Number:</label>
+      <input type="text" id="num2" name="num2">
+    </div>
+    <label>Result:</label>
+    <label id="result"></label><br>
+    <button type="button" onclick="add()">ADD</button>
+    <button type="button" onclick="subtract()">SUBTRACT</button>
+    <button type="button" onclick="multiply()">MULTIPLY</button>
+    <button type="button" onclick="divide()">DIVIDE</button>
+  </form>
+
+
+  <script>
+    function add(){
+      let n1 = document.getElementById("num1").value
+      let n2 = document.getElementById("num2").value
+      document.getElementById("result").innerHTML = (parseInt(n1) + parseInt(n2));
+    }
+    function subtract(){
+      let n1 = document.getElementById("num1").value
+      let n2 = document.getElementById("num2").value
+      document.getElementById("result").innerHTML = (parseInt(n1) - parseInt(n2));
+    }
+    function multiply(){
+      let n1 = document.getElementById("num1").value
+      let n2 = document.getElementById("num2").value
+      document.getElementById("result").innerHTML = (parseInt(n1) * parseInt(n2));
+    }
+    function divide(){
+      let n1 = document.getElementById("num1").value
+      let n2 = document.getElementById("num2").value
+      if(n2!=0){
+      document.getElementById("result").innerHTML = (parseInt(n1) / parseInt(n2));
+    }
+    else{
+      document.getElementById("result").innerHTML=("Invalid Format")
+    }
+  }
+  </script>
+</body>
+</html>
