@@ -1,0 +1,43 @@
+body{
+    border:black 5px solid;
+    align-items:center;
+    background-color:beige;
+    display:flex;
+    margin:0;
+    justify-content: center;
+    height:100vh;
+
+}
+label{
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+    color: brown;
+}
+#result{
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+button{
+    background-color:cadetblue;
+    border:black 2px solid;
+    padding:10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.box{
+    border-radius: 12px;
+    padding: 20px 30px;
+    width: 450px;
+    text-align: center;
+}
+input{
+    width:100%;
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}

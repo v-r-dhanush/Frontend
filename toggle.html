@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body img{
+        width: 300px;
+        height: 300px;                 
+        }
+    body{
+        margin: auto;
+        text-align: center;
+    }
+    h2{
+        margin-bottom : 20px;
+    }
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 60px;
+    }
+    button {
+        background-color: #000000;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 15px;
+        font-size: 13px;
+        cursor: pointer;
+        margin: 10px;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #555555;
+    }
+</style>
+<title>Toggle Image</title>
+</head>
+<body>
+    <div class="parent">
+        <h2>Toggle Image</h2>
+        <div class="image">
+            <img src="../Assingment/images/jeff.jpeg" alt="jeff" id="w1" ><br>
+            <button type="button" onclick="changeimage()">Switch</button>
+        </div>
+    </div>
+    <script>
+        function changeimage(){
+            let data = document.getElementById("w1").alt;
+            console.log(data);
+            let data1="tata";
+            if(data === "jeff"){
+            document.getElementById("w1").src="../Assingment/images/jeff.jpeg";
+            document.getElementById("w1").alt = "tata";
+            }
+            else if (data === data1){
+            document.getElementById("w1").src="../Assingment/images/tata.jpeg";
+            document.getElementById("w1").alt = "jeff";
+            }
+        }
+    </script>
+</body>
+</html>
