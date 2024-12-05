@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".//traffic.css">
+    <title>Traffic</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="circle" id="red">
+
+            </div>
+            <div class="circle" id="yellow">
+                
+            </div>
+            <div class="circle" id="green">
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        let data = "red";
+        function light(){
+            if(data === "red"){
+                document.getElementById("red").className="circle red";
+                document.getElementById("yellow").className="circle ";
+                document.getElementById("green").className="circle ";
+                data="yellow";
+            }
+            else if(data === "yellow"){
+                document.getElementById("red").className="circle ";
+                document.getElementById("yellow").className="circle yellow ";
+                document.getElementById("green").className="circle ";
+                data="green";
+            }
+            else{
+                document.getElementById("red").className="circle ";
+                document.getElementById("yellow").className="circle ";
+                document.getElementById("green").className="circle green ";
+                data="red";
+            }
+        }
+        setInterval(light,3000);
+    </script>
+</body>
+</html>
